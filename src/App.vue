@@ -12,12 +12,9 @@ export default {
 </script>
 
 <template>
-  <div class="wrapper">
-
-    <appHeader />
-    <!-- other content -->
-    <appFooter />
-  </div>
+  <appHeader />
+  <!-- other content -->
+  <appFooter />
 </template>
 
 <style scoped>

@@ -45,14 +45,17 @@ export default {
 </script>
 
 <template>
-    <header>
-        <nav class="navbar">
-            <img src="/img/dc-logo.png " alt="logo">
-            <div class="titles">
-                <a v-for=" title in navTitles " href="title.link">{{ title.text }}</a>
-            </div>
-        </nav>
-    </header>
+    <div class="wrapper">
+
+        <header>
+            <nav class="navbar">
+                <img src="/img/dc-logo.png " alt="logo">
+                <div class="titles">
+                    <a v-for=" title in navTitles " href="title.link">{{ title.text }}</a>
+                </div>
+            </nav>
+        </header>
+    </div>
 </template>
 
 <style scoped>
