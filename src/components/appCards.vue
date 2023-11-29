@@ -19,14 +19,13 @@ export default {
             <div class="all_cards">
                 <div v-for="card in cardList" class="card">
                     <img :src=card.thumb alt="card image">
-                    <p>{{ card.series }}</p>
+                    <p>{{ card.series.toUpperCase() }}</p>
                 </div>
             </div>
             <div class="centered_button">
-                <button class="card_btn">Load More</button>
+                <button class="card_btn">LOAD MORE</button>
             </div>
         </div>
-
     </div>
 </template>
 
@@ -34,7 +33,7 @@ export default {
 <style>
 .all_cards_bg {
     background-color: black;
-    height: 34rem;
+    height: 36rem;
 }
 
 .all_cards_wrapper {
@@ -53,7 +52,7 @@ export default {
 .card {
     width: 10rem;
     height: 11rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .card img {
@@ -63,18 +62,17 @@ export default {
 
 .card p {
     font-size: 0.80rem;
+    padding-top: 0.5rem;
 }
 
 .centered_button {
     width: 7rem;
     margin: 2rem auto;
-
-
 }
 
 .card_btn {
-    width: 7rem;
-    height: 1.5rem;
+    width: 9rem;
+    height: 2rem;
     background-color: #3682f3;
     color: white;
     font-weight: bold;

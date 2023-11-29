@@ -90,8 +90,6 @@ export default {
             type: "graphic novel",
           },
         ]
-
-
     }
   }
 
@@ -99,6 +97,7 @@ export default {
 
 </script>
 
+<!-- HTML Section -->
 <template>
   <!-- Header Section -->
   <appHeader />
@@ -119,6 +118,7 @@ export default {
   <appFooter />
 </template>
 
+<!-- Styling Section -->
 <style scoped>
 .wrapper {
   width: 75%;
@@ -130,8 +130,6 @@ export default {
   height: 25rem;
   overflow: hidden;
   position: relative;
-
-
 }
 
 .jumbo {

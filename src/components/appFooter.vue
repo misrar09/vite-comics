@@ -134,7 +134,6 @@ export default {
     color: white;
 }
 
-
 .cats span {
     padding: 1rem;
 }
@@ -144,7 +143,6 @@ export default {
 }
 
 .secondSection {
-
     background-image: url(./img/footer-bg.jpg);
     height: 24rem;
 }
@@ -163,13 +161,11 @@ export default {
 }
 
 .dc_bg {
-
     width: 60%;
     object-fit: cover;
     background-repeat: no-repeat;
     background-position: right;
     background-image: url(./img/dc-logo-bg.png);
-
 }
 
 i {
@@ -194,11 +190,9 @@ i:hover {
 }
 
 .thirdSection {
-
     color: white;
     background-color: black;
     height: 6rem;
-
 }
 
 .third_sec_wrapper {
@@ -212,7 +206,7 @@ i:hover {
 
 .sing_up {
     border: 1px solid #3682f3;
-    padding: 1rem;
+    padding: 0.75rem;
     margin-left: 1rem;
     font-size: 1.25rem;
 }
@@ -226,6 +220,5 @@ i:hover {
     align-items: center;
     gap: 2rem;
     color: #3682f3;
-}
-</style>
+}</style>
 
