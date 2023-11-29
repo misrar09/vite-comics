@@ -65,6 +65,8 @@ export default {
     margin: 1rem;
     gap: 10rem;
     font-size: 0.85rem;
+    height: 8rem;
+    position: fixed;
 
 }
 

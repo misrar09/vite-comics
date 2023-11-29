@@ -13,6 +13,9 @@ export default {
 
 <template>
   <appHeader />
+  <div class="other_cont">
+
+  </div>
   <!-- other content -->
   <appFooter />
 </template>
@@ -20,5 +23,11 @@ export default {
 <style scoped>
 .wrapper {
   margin: 0 7rem;
+}
+
+.other_cont {
+  min-width: 100vw;
+  min-height: 40rem;
+  overflow: auto;
 }
 </style>

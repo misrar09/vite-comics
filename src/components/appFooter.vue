@@ -84,8 +84,8 @@ export default {
                 <a href="#">DC Universe</a>
                 <a href="#">DC Power Visa</a>
             </div>
-            <div>
-                <img class="dc_bg" src="/img/dc-logo-bg.png" alt="">
+            <div class="dc_bg">
+                <!-- <img class="dc_bg" src="/img/dc-logo-bg.png" alt=""> -->
             </div>
         </div>
     </section>
@@ -115,6 +115,8 @@ export default {
 
     background-color: #3682f3;
     height: 8rem;
+    /*     position: relative;
+    top: 5rem; */
 }
 
 .cat_wrapper {
@@ -143,6 +145,11 @@ export default {
 .secondSection {
 
     background-image: url(./img/footer-bg.jpg);
+    /*     position: relative;
+    top: 0rem;
+    z-index: -1; */
+    height: 23.5rem;
+
 
 }
 
@@ -159,7 +166,12 @@ export default {
 }
 
 .dc_bg {
-    margin-left: 10rem;
+    width: 60%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./img/dc-logo-bg.png);
+
 }
 
 i {
@@ -203,3 +215,4 @@ i {
     color: #3682f3;
 }
 </style>
+
