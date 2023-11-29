@@ -46,7 +46,6 @@ export default {
 
 <template>
     <div class="wrapper">
-
         <header>
             <nav class="navbar">
                 <img src="/img/dc-logo.png " alt="logo">
@@ -62,11 +61,10 @@ export default {
 .navbar {
     display: flex;
     align-items: center;
-    margin: 1rem;
-    gap: 10rem;
+    justify-content: space-between;
     font-size: 0.85rem;
-    height: 8rem;
-    position: fixed;
+    height: 6rem;
+
 
 }
 
@@ -76,13 +74,13 @@ export default {
     color: black;
     font-weight: bold;
     cursor: pointer;
-    padding-bottom: 1rem;
-    padding: 1rem;
+    margin: 1rem;
 }
 
 .titles>a:hover {
     color: #3682f3;
-    border-bottom: 4px solid #3682f3;
+    border-bottom: 7px solid #3682f3;
+    padding-bottom: 2.1rem;
 }
 
 .navbar img {

@@ -38,7 +38,6 @@ export default {
                 <img :src="category.image" alt="image">
                 <span>{{ category.text }}</span>
             </div>
-
         </div>
     </section>
     <section class="secondSection ">
@@ -90,19 +89,21 @@ export default {
         </div>
     </section>
     <section class="thirdSection">
-        <div class="sing_up">
-            <h5>SIGN-UP NOW!</h5>
-        </div>
-        <div class="follow_us">
-            <div>
-                <h4>FOLLOW US</h4>
+        <div class="third_sec_wrapper">
+            <div class="sing_up">
+                <h5>SIGN-UP NOW!</h5>
             </div>
-            <div>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-pinterest"></i>
-                <i class="fa-solid fa-location-dot"></i>
+            <div class="follow_us">
+                <div>
+                    <h4>FOLLOW US</h4>
+                </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
             </div>
         </div>
     </section>
@@ -112,17 +113,17 @@ export default {
 
 <style scoped>
 .categories {
-
     background-color: #3682f3;
     height: 8rem;
-    /*     position: relative;
-    top: 5rem; */
+
 }
 
 .cat_wrapper {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 0 7rem;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .cats {
@@ -145,17 +146,13 @@ export default {
 .secondSection {
 
     background-image: url(./img/footer-bg.jpg);
-    /*     position: relative;
-    top: 0rem;
-    z-index: -1; */
-    height: 23.5rem;
-
-
+    height: 24rem;
 }
 
 .col_wrapper {
     display: flex;
-    margin: 0 7rem;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .col {
@@ -166,10 +163,11 @@ export default {
 }
 
 .dc_bg {
+
     width: 60%;
     object-fit: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     background-image: url(./img/dc-logo-bg.png);
 
 }
@@ -178,6 +176,10 @@ i {
     color: gray;
     font-size: 2rem;
     margin-right: 1rem;
+}
+
+i:hover {
+    color: #3682f3;
 }
 
 .col h4 {
@@ -192,13 +194,20 @@ i {
 }
 
 .thirdSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
     color: white;
     background-color: black;
     height: 6rem;
-    padding: 0 7rem;
+
+}
+
+.third_sec_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .sing_up {
@@ -206,6 +215,10 @@ i {
     padding: 1rem;
     margin-left: 1rem;
     font-size: 1.25rem;
+}
+
+.sing_up:hover {
+    background-color: #3682f3;
 }
 
 .follow_us {
