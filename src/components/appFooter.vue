@@ -52,7 +52,6 @@ export default {
                     <a href="#">Games</a>
                     <a href="#">Videos</a>
                     <a href="#">News</a>
-
                 </div>
                 <div class="col" l>
                     <h4>SHOP</h4>
@@ -220,5 +219,6 @@ i:hover {
     align-items: center;
     gap: 2rem;
     color: #3682f3;
-}</style>
+}
+</style>
 

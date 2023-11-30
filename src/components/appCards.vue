@@ -4,51 +4,21 @@ export default {
     name: "appCards",
 
     props: [
-        "cardList" // cardList coming from App
+        "image", "title" // coming from App
     ],
 
 }
-
 </script>
 
-
 <template>
-    <div class="all_cards_bg">
-        <div class="all_cards_wrapper">
-
-            <div class="all_cards">
-                <div v-for="card in cardList" class="card">
-                    <img :src=card.thumb alt="card image">
-                    <p>{{ card.series.toUpperCase() }}</p>
-                </div>
-            </div>
-            <div class="centered_button">
-                <button class="card_btn">LOAD MORE</button>
-            </div>
-        </div>
+    <div class="card">
+        <img :src=image alt="card image">
+        <p>{{ title.toUpperCase() }}</p>
     </div>
 </template>
 
 
 <style>
-.all_cards_bg {
-    background-color: black;
-    height: 36rem;
-}
-
-.all_cards_wrapper {
-    width: 70%;
-    margin: 0 auto;
-}
-
-.all_cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    color: white;
-    padding: 2rem 0;
-}
-
 .card {
     width: 10rem;
     height: 11rem;
@@ -63,20 +33,5 @@ export default {
 .card p {
     font-size: 0.80rem;
     padding-top: 0.5rem;
-}
-
-.centered_button {
-    width: 7rem;
-    margin: 2rem auto;
-}
-
-.card_btn {
-    width: 9rem;
-    height: 2rem;
-    background-color: #3682f3;
-    color: white;
-    font-weight: bold;
-    border-color: #3682f3;
-
 }
 </style>

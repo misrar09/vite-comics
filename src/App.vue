@@ -92,7 +92,6 @@ export default {
         ]
     }
   }
-
 }
 
 </script>
@@ -112,7 +111,16 @@ export default {
   </div>
 
   <!-- Cards Section -->
-  <appCards :cardList="cards" />
+  <div class="all_cards_bg">
+    <div class="all_cards_wrapper">
+      <div class="all_cards">
+        <appCards v-for="card in cards" :image="card.thumb" :title="card.series" />
+      </div>
+      <div class="centered_button">
+        <button class="card_btn">LOAD MORE</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer Section -->
   <appFooter />
@@ -147,5 +155,38 @@ export default {
   position: absolute;
   top: 30rem;
   left: 14rem;
+}
+
+.centered_button {
+  width: 7rem;
+  margin: 2rem auto;
+}
+
+.card_btn {
+  width: 9rem;
+  height: 2rem;
+  background-color: #3682f3;
+  color: white;
+  font-weight: bold;
+  border-color: #3682f3;
+
+}
+
+.all_cards_bg {
+  background-color: black;
+  height: 36rem;
+}
+
+.all_cards_wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.all_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  color: white;
+  padding: 2rem 0;
 }
 </style>
